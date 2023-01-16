@@ -48,35 +48,29 @@ public class Main {
     public static void task4() {
         System.out.println("Задача 4");
         int deposit = 15000;
-        int total = 0;
-        for (int month = 1; total <= 12_000_000; month++) {
-            total = total + deposit;
-            total = total + total * 7 / 100;
-            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+        for (int month = 1; deposit <= 12_000_000; month++) {
+            deposit = deposit + deposit * 7 / 100;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + deposit + " рублей");
         }
     }
     public static void task5() {
         System.out.println("Задача 5");
         int deposit = 15000;
-        int total = 0;
-        for (int month = 1; total <= 12_000_000; month++) {
-            total = total + deposit;
-            total = total + total * 7 / 100;
+        for (int month = 1; deposit <= 12_000_000; month++) {
+            deposit = deposit + deposit * 7 / 100;
             if (month % 6 == 0) {
-                System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + deposit + " рублей");
             }
         }
     }
     public static void task6() {
         System.out.println("Задача 6");
         int deposit = 15000;
-        int total = 0;
         int timeYears = 9;
         for (int month = 1; month <= 12 * timeYears; month++) {
-            total = total + deposit;
-            total = total + total * 7 / 100;
+            deposit = deposit + deposit * 7 / 100;
             if (month % 6 == 0) {
-                System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + deposit + " рублей");
             }
         }
     }
